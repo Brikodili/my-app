@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import setImgCrop from '../../utils/setImgCrop';
 import toLocaleString from '../../utils/toLocaleString';
 
+import './post.scss'
+
 const Post = (props) => {
     const { data } = props;
 
@@ -18,14 +20,14 @@ const Post = (props) => {
 
     const href = `/post/${id}`;
     return (
-        <li id={id} className="chunk__item">
-            <Link to={href} className="post">
+        <li id={id} className="chunk__item post">
+            <Link to={href} className="post__link">
                 <div className="post__thumbnail">
                     <img className="post__image" alt={name} src={setImgCrop(url)} />
                 </div>
                 <div className="post__caption">
-                    <time>{toLocaleString(createdAt)}</time>
                     <h3 className="post__title">{name}</h3>
+                    <time className="post__date">{toLocaleString(createdAt)}</time>
                     <div className="post__tag">{tagline}</div>
                 </div>
             </Link>
