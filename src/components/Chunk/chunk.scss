@@ -1,0 +1,14 @@
+.chunk {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+  }
+}

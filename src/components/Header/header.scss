@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  &__nav {
+    display: flex;
+  }
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.25rem;
+
+    &:hover, &:focus {
+      cursor: pointer;
+    }
+  }
+}

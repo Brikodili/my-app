@@ -1,0 +1,28 @@
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.note {
+  border: 2px solid #cccccc;
+  word-wrap: break-word;
+  padding: 1rem;
+  margin: 1.25rem;
+  border-radius: 1.25rem;
+  box-shadow: 1px 0 2px #cccccc;
+
+  &__title {
+    width: 200px;
+    overflow: hidden;
+    max-height: 20px;
+  }
+
+  &__description {
+    width: 200px;
+    overflow: scroll;
+    max-height: 60px;
+  }
+}
+

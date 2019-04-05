@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #cccccc;
+  border-radius: .5rem;
+  box-shadow: 1px 0 2px #cccccc;
+  padding: 3px;
+
+  &:focus {
+    outline: none;
+  }
+
+
+  &__title {
+    min-height: 2rem;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+  }
+
+  &__description {
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  &__btn {
+    font-size: 1rem;
+    background-color: #ffffff;
+    border: none;
+    padding: 0.75rem;
+
+    &:hover {
+      span {
+        cursor: pointer;
+        background-color: #cccccc;
+        padding: .5rem 1.75rem;
+      }
+    }
+  }
+}
+
+input:focus, textarea:focus, button:focus {
+  outline-offset: 0;
+  outline: none;
+}

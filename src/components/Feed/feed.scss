@@ -1,0 +1,11 @@
+.feed {
+  //display: flex;
+  //flex-wrap: wrap;
+  //justify-content: center;
+
+  &__chunk {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.post {
+  display: flex;
+  box-shadow: 1px 0 2px #cccccc;
+
+  &__link {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  &__thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  &__image {
+    flex-shrink: 0;
+    width: 100%;
+    min-width: 100%;
+    max-width: none;
+    min-height: 100%;
+  }
+
+}
