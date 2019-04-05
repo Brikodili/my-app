@@ -2,13 +2,25 @@
   max-width: 50%;
   margin: 0 auto;
   max-height: 80vh;
+  color: #666;
 
   &__thumbnail {
     width: 300px;
-    margin: 0 auto;
+  }
+
+  &__date {
+    border: 1px solid #cccccc;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: #cccccc;
   }
 
   &__image {
     max-width: 100%;
   }
+
+  &__tag {
+    color: #cccccc;
+  }
+
 }

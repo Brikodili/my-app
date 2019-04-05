@@ -28,7 +28,7 @@ const Post = (props) => {
                 <div className="post__caption">
                     <h3 className="post__title">{name}</h3>
                     <time className="post__date">{toLocaleString(createdAt)}</time>
-                    <div className="post__tag">{tagline}</div>
+                    <p className="post__tag">{tagline}</p>
                 </div>
             </Link>
         </li>

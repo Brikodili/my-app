@@ -20,9 +20,9 @@ const Article = (props) => {
                 <img className="article__image" alt={name} src={url} />
             </div>
             <div className="article__caption">
-                <time>{toLocaleString(createdAt)}</time>
-                <h3 className="article__title">{name}</h3>
-                <span className="article__tag">{tagline}</span>
+                <h2 className="article__title">{name}</h2>
+                <time className="article__date">{toLocaleString(createdAt)}</time>
+                <p className="article__tag">{tagline}</p>
                 <p className="article__description">{description}</p>
             </div>
         </div>
