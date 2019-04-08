@@ -16,10 +16,8 @@ export default class Feed extends Component {
 
     getChunk = async (page) => {
         const { loadedPage } = this.state;
-        console.log(page, loadedPage, 'Use state');
 
         if (page > loadedPage) {
-            console.log('loading...');
 
             const res = await api.get('/posts/all', { params: { page, per_page: 20 } });
             const { posts } = await res.data;

@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
+  padding-left: 0;
 }
 
 .note {
@@ -16,7 +17,7 @@
   &__title {
     width: 200px;
     overflow: hidden;
-    max-height: 20px;
+    max-height: 1.5rem;
   }
 
   &__description {
