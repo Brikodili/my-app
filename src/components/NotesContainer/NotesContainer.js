@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import AddForm from "../AddForm/AddForm";
-import Note from "../Note";
 import UpdateForm from "../UpdateForm";
+import Note from "../Note";
+import SimpleStorage from "react-simple-storage";
 
 export default class NotesContainer extends Component {
     state = {
@@ -41,6 +42,7 @@ export default class NotesContainer extends Component {
 
         return (
             <div>
+                <SimpleStorage parent={this} />
                 {this.state.isEdit ? (
                     <UpdateForm onSubmit={this.onUpdate} editedNote={this.state.editedNote} />
                 ) : (
