@@ -17,7 +17,6 @@ class ArticleItem extends Component {
         this.setState({
             post: post
         });
-        // console.log(this.state.post);
     };
 
     render() {

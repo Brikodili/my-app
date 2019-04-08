@@ -3,7 +3,6 @@ import { Switch, Route } from 'react-router-dom'
 import Feed from "../Feed";
 import NotesContainer from '../NotesContainer';
 import ArticleItem from '../ArticleItem';
-// import NewTry from "./NewTry";
 
 const Main = () => (
     <main>
